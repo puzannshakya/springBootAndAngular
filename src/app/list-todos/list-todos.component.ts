@@ -45,7 +45,7 @@ export class ListTodosComponent implements OnInit {
     console.log('Delete Todo '+id);
    
 
-    this.todoService.updateTodo('in28minutes',id).subscribe
+    this.todoService.deleteTodo('in28minutes',id).subscribe
     (
       response => {
         console.log(response);
